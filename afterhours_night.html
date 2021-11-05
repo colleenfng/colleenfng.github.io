@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<head>
+    <title>
+
+    </title>
+    <style>
+        body {
+            background: rgb(204,242,233);
+background: linear-gradient(0deg, rgba(204,242,233,1) 13%, rgba(182,62,238,1) 63%, rgba(41,45,57,1) 98%);
+background-attachment: fixed;        
+}
+
+
+        h2 {
+        color: rgb(255, 230, 253);
+        font-family: 'Black Mamba Trial';
+        font-size: 80px;
+        stroke: 3px;
+        margin-left: 10px;
+        text-align: center;
+        text-shadow: 0px 0px 30px rgb(252, 220, 255),0px 0px 30px rgb(252, 220, 255),0px 0px 30px rgb(252, 220, 255),0px 0px 10px #fff3e2,0px 0px 10px #553300;
+        position: fixed;
+        }
+        h1 {
+        color: rgb(255, 230, 253);
+        text-shadow: 0px 0px 30px rgb(252, 220, 255),0px 0px 30px rgb(255, 191, 244),0px 0px 30px rgb(252, 220, 255),0px 0px 10px #fff3e2,0px 0px 10px #553300;
+        font-family: 'Black Mamba Trial';
+        font-size: 40px;
+        margin-left: 340px;
+        margin-top: 350px;
+        text-align: center;
+        position: fixed;
+        }
+        h3 {
+        color: rgb(255, 230, 253);
+        font-family: 'DS-Digital';
+        font-size: 100px;
+        margin-left: 540px;
+        margin-top:430px;
+        text-align: center;
+        position: fixed;
+        }
+        #sound{
+            border: none;
+            position:fixed;
+            max-height:5%;
+            max-width:5%;
+
+        }
+
+        #myVideo {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            opacity: 0.55;
+            }
+        .info{
+            position: fixed;
+            max-width:15%;
+            font-family: Overpass Mono;
+            font-weight: Regular;
+            font-size:16px;
+            text-align: center;
+            color:rgb(21, 0, 46);
+            line-height: 98%;
+        }
+        #one{
+            margin-left: 250px;
+            margin-top: 540px;
+        }
+        #two{
+            margin-left: 960px;
+            margin-top: 540px;
+        }
+        p3{
+            position: fixed;
+            max-width:20%;
+            font-family: Overpass Mono;
+            font-weight: Regular;
+            font-size:30px;
+            text-align: center;
+            margin-left: 610px;
+            margin-top: 540px;
+            color:rgb(255, 255, 255);
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>  
+    <video autoplay muted loop id="myVideo">
+        <source src="neon.mp4" type="video/mp4">
+      </video> 
+    <h2>After Hours Music Night</h2>
+    <h1>Hosted by the Blue Club</h1>
+    <h3>00:00:00</h3>
+    <!--- <button id="sound" onclick ="audio.play();">Click me for sound!</button>
+<script type="text/javascript">
+    const audio = new Audio();
+    audio.src = "./chill.mp3"; 
+</script>-->
+<audio id="myAudio" src="chill.mp3" preload="auto">
+</audio>
+<a onClick="togglePlay()"><img id = "sound" src="volume.png" alt="Play/Pause Music"></a>
+<script>
+var myAudio = document.getElementById("myAudio");
+    var isPlaying = false;
+    
+    function togglePlay() {
+      isPlaying ? myAudio.pause() : myAudio.play();
+    };
+    
+    myAudio.onplaying = function() {
+      isPlaying = true;
+    };
+    myAudio.onpause = function() {
+      isPlaying = false;
+    };
+    </script>
+</body>
+<footer>
+    <p1 class = "info" id = "one">After Hours Music night is a nightly event hosted by The Blue Club where alternative genre artists perform live.</p1>
+    <p2 class = "info" id = "two"> Tickets for the next night are exclusively sold during the previous night from 7pm-12am </p2>
+    <p3>BUY TICKETS</p3>
+</footer>
