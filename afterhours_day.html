@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<head>
+    <title>
+
+    </title>
+    <style>
+        @font-face {
+            font-family: 'Overpass Mono';
+            src: url ('OverpassMono-Regular.ttf');
+        }
+        body {
+        background-color: white;
+        }
+
+
+        h2 {
+        color: black;
+        font-family: 'Baskerville';
+        font-size: 95px;
+        margin-left: 160px;
+        margin-top: 50px;
+        position: fixed;
+        max-width: 80%;
+        text-align: center;
+        letter-spacing: 10px;
+        
+        }
+        h1 {
+        color: black;
+        font-family: 'Baskerville';
+        font-size: 60px;
+        margin-left: 380px;
+        margin-top: 340px;
+        position: fixed;
+        font-weight: lighter;
+        letter-spacing: 5px;
+        }
+        .info{
+            position: fixed;
+            max-width:15%;
+            font-family: Overpass Mono;
+            font-weight: Regular;
+            font-size:16px;
+            text-align: center;
+            color:rgb(21, 0, 46);
+            line-height: 98%;
+        }
+        #one{
+            margin-left: 250px;
+            margin-top: 540px;
+        }
+        #two{
+            margin-left: 920px;
+            margin-top: 540px;
+        }
+        #sound{
+            border: none;
+            position:fixed;
+            max-height:5%;
+            max-width:5%;
+
+        }
+    </style>
+        <p1 class = "info" id = "one">After Hours Music night is a nightly event hosted by The Blue Club where alternative genre artists perform live.</p1>
+        <p2 class = "info" id = "two"> Tickets for the next night are exclusively sold during the previous night from 7pm-12am </p2>
+        <audio id="myAudio" src="elevator.mp3" preload="auto">
+        </audio>
+        <a onClick="togglePlay()"><img id = "sound" src="volume copy.png" alt="Play/Pause Music"></a>
+        <script>
+        var myAudio = document.getElementById("myAudio");
+            var isPlaying = false;
+            
+            function togglePlay() {
+              isPlaying ? myAudio.pause() : myAudio.play();
+            };
+            
+            myAudio.onplaying = function() {
+              isPlaying = true;
+            };
+            myAudio.onpause = function() {
+              isPlaying = false;
+            };
+            </script>
+            <script>
+                document.body.addEventListener("keydown", function (event) {
+                if (event.key === "Enter") {
+                window.location.replace("afterhours_sunset.html");
+        }
+        });
+            </script>
+    <h2>after hours music night</h2>
+<h1>hosted by the blue club</h1>
+
+
+</head>
+<body>
+
+
+</body>
+<footer>
+ 
+</footer>
