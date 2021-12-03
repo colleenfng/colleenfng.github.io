@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        Moodrng
+    </title>
+    <style>
+         body {
+    animation: myfadeInAnimation 2s;
+}
+div {
+    width: 300px;
+}
+@keyframe myfadeInAnimation {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+@-webkit-keyframes myfadeInAnimation {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+        @font-face {
+            font-family: 'Overpass Mono';
+            src: ('OverpassMono-Regular.ttf');
+        }
+        p1{
+            font-family: OverpassMono-Regular;
+                color: white;
+                font-size: 24px;
+                margin-left: 390px;
+                margin-top: 260px;
+                max-width: 100%;
+                position: absolute
+        }
+        .circle{
+             position: absolute;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+        }
+        .circle:hover { 
+                transition: 0.5s all;
+                transform: scale(1.2);
+                transition-timing-function: infinite alternate ease-in-out;
+        }
+        
+        div1{
+            background-color: #FF7676;
+            top: 340px;
+            left: 450px;
+        }
+        div2{
+            background-color: #336CFF;
+            top: 340px;
+            left: 562px;
+        }
+        div3{
+            background-color: #FFA8E1;
+            top: 340px;
+            left: 674px;
+        }
+        div4{
+            background-color: #FFE03A;
+            top: 340px;
+            left: 786px;
+        }
+        div5{
+            background-color: #9AFF8A;
+            top: 340px;
+            left: 900px;
+        }
+body{
+            background: black;
+        }
+    </style>
+    <p1>
+        Good evening! What color did you feel today?
+    </p1>
+</head>
+<body>
+    <div1 class = "circle"></div1>
+    <a href="moodring_1.75.html"><div2 class = "circle"></div2></a>
+    <div3 class = "circle"></div3>
+    <div4 class = "circle"></div4>
+    <div5 class = "circle"></div5>
+
+</body>
